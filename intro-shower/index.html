@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+</head>
+<body class="shower list">
+
+	<header class="caption">
+		<h1>Инструкция по работе с Shower Presentation Engine</h1>
+		<p>Николай Жуков, кафедра КТиЭО, РГПУ им. А. И. Герцена</p>
+	</header>
+
+	<section class="slide" id="cover">
+		<h2>Инструкция по работе с Shower</h2>
+		<p class="black">Подготовил: <a href="http://nickzhukov.ru">Николай Жуков</a></p>
+		<figure>
+			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<figcaption class="white">
+				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+			</figcaption>
+		</figure>
+		<style>
+			#cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+			#cover p a {
+				color:#FFF;
+				}
+			#cover p.black {
+				color: black;
+			}
+
+			#cover p.black>a {
+				color: black;
+			}
+
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Структура презентации</h2>
+		<ol>
+			<li>Введение (автор, краткое описание).</li>
+			<li>Достоинства и недостатки.</li>
+			<li>Цель создания презентации именно с Shower.</li>
+			<li>Возможности.</li>
+			<li>Жизненный цикл презентации с Shower.</li>
+			<li>Этапы создания презентации.</li>
+			<li>Инструменты для работы c Shower. Хостинг для презентации.</li>
+			<li>Использование GitHub: Pages, Wiki, Issues при создании презентаций.</li>
+		</ol>
+	</section>
+	
+	<section class="slide">
+		<h2 class="shout shrink">Введение</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Тест</h2>
+	</section>
+
+	<section class="slide" id="picture">
+		<style>
+			#picture h2 {
+				color:#FFF;
+			}
+			.slide figcaption {
+				bottom: 40px !important;
+			}
+		</style>
+		<h2>Вадим Макеев, <i>aka <a href="https://pepelsbey.net">Pepelsbey</a></i></h2>
+		<figure>
+			<img class="cover" src="https://i.ytimg.com/vi/KAK-WAb9vow/maxresdefault.jpg" alt="Вадим Макеев c докладом 'Людоедский интерфейс'">
+			<figcaption class="white">
+				<a href="https://www.youtube.com/watch?v=KAK-WAb9vow">© Веб-стандарты</a>
+			</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide" id="picture">
+		<figure>
+			<img class="cover" src="http://www.pvhc.net/img148/rqnerxzxnazbsrzcmgkf.png" alt="логотипы HTML и CSS, JavaScript">
+			<figcaption class="black">
+				<a href="http://www.pvhc.net/Html-Css-Js-Icon20xjepcfgt/">© www.pvhc.net</a>
+			</figcaption>
+		</figure>
+	</section>
+
+
+	<section class="slide">
+		<h2 class="shout shrink">Недостатки Shower</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Недостатки</h2>
+		<ol>
+			<li>Высокий порог входа.</li>
+			<li>Презентация состоит из > 1 файла.</li>
+			<li>Удобство размещения на слайде элементов.</li>
+			<li>Ограниченное количество элементов «из коробки».</li>
+		</ol>
+		<p class="note">Например: темы, стили, шрифты и прочее.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Достоинства Shower</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Достоинства</h2>
+		<ol>
+			<li>Может быть размещена онлайн.</li>
+			<li>Открывается с помощью любого современного браузера.</li>
+			<li>Экспорт в формат PDF.</li>
+			<li>Интеграция в презентацию «сложного» контента.</li>
+			<li>Интеграция в LMS (SCORM).</li>
+			<li>Могут быть встроены опросы, тесты (в том числе «Формы Google»).</li>
+			<li>Презентации индексируются поисковыми системами.</li>
+		</ol>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">Цели создания презентации с Shower</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Цель №1</h2>
+		<p>Существует необходимость создать презентацию с контентом, индексируемым поисковыми системами, с которой возможно было бы работать на любых платформах (в том числе и на мобильных) без установки какого-либо специализированного ПО и чтобы возможно было использовать такую презентации в электронных образовательных ресурсах.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Цель №2</h2>
+		<p>Встраивать внутрь презентации нестандартные объекты. Например: опрос, мультимедиа-контент, интерактивные элементы.</p>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Возможности</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Подробнее о возможностях</h2>
+		<ol>
+			<li class="next">Основан на HTML, CSS, Javascript и расширяем с помощью этих языков.</li>
+			<li class="next">Работает во всех современных браузерах. </li>
+			<li class="next">Поддерживает 2 темы для оформления презентаций.</li>
+			<li class="next">Экспорт презентации в PDF формате.</li>
+			<li class="next">Виды контента в презентации из стандарта HTML.</li>
+			<li class="next">Форматирование и его расширение.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Жизненный цикл</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Основные этапы ЖЦ презентации</h2>
+		<ol>
+			<li class="next">Начало работы — загрузка образца.</li>
+			<li class="next">Вставка контента и форматирование содержимого. </li>
+			<li class="next">Публикация презентации или экспорт в PDF.</li>
+			<li class="next">Внесение изменений.</li>
+		</ol>
+	</section>
+
+
+	<section class="slide">
+		<h2 class="shout shrink">Этапы создания</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Как создать презентацию с Shower?</h2>
+		<ol>
+			<li class="next">Загрузка шаблона.</li>
+			<li class="next">Разархивировать и открыть <code>index.html</code>. </li>
+			<li class="next">Слайд — это тег <code>section</code> с классом <code>slide</code>.</li>
+			<li class="next">Редактирование кода <code>index.html</code>.</li>
+			<li class="next">Вставка изображения, таблицы.</li>
+			<li class="next">Вставка видеоролика (тег <code>iframe</code> или <code>video</code>).</li>
+			<li class="next">Экспортировать в PDF.</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Инструменты. Хостинг для презентации</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Инструменты для работы</h2>
+		<ul>
+			<li class="next">текстовый редактор (например, Sublime Text 3);</li>
+			<li class="next">валидатор разметки;</li>
+			<li class="next">современный браузер (например, Google Chrome или Yandex браузер);</li>
+			<li class="next">учетная запись в GitHub.</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Git. GitHub: Pages, Wiki, Issues</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink"><span style="color:red;">&#9679;</span> Демо</h2>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Примеры слайдов, оформления</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Shower key features</h2>
+		<ol>
+			<li>Built on HTML, CSS and vanilla JavaScript</li>
+			<li>Works in all modern browsers</li>
+			<li>Themes are separated from engine</li>
+			<li>Modular and extensible</li>
+			<li>Fully keyboard accessible</li>
+			<li>Printable to PDF</li>
+		</ol>
+		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Plain text on your slides</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Two columns if you like</h2>
+		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+	</section>
+
+	<section class="slide">
+		<h2>All kind of lists</h2>
+		<ol>
+			<li>Simple lists are marked with bullets</li>
+			<li>Ordered lists begin with a number</li>
+			<li>You can even nest lists one inside another
+				<ul>
+					<li>Or mix their types</li>
+					<li>But do not go too far</li>
+					<li>Otherwise audience will be bored</li>
+				</ul>
+			</li>
+			<li>Look, seven rows exactly!</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Serious citations</h2>
+		<figure>
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+			</blockquote>
+			<figcaption>Marcus Tullius Cicero</figcaption>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Code samples</h2>
+		<pre>
+			<code>&lt;!DOCTYPE html&gt;</code>
+			<code class="mark">&lt;html lang="en"&gt;</code>
+			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code><mark>&lt;/head&gt;</mark></code>
+		</pre>
+	</section>
+
+	<section class="slide">
+		<h2>Even tables</h2>
+		<table>
+		<tr>
+			<th scope="col">Locavore</th>
+			<th>Umami</th>
+			<th>Helvetica</th>
+			<th>Vegan</th>
+		</tr>
+		<tr>
+			<th scope="row">Fingerstache</th>
+			<td>Kale</td>
+			<td>Chips</td>
+			<td>Keytar</td>
+		</tr>
+		<tr>
+			<th scope="row">Sriracha</th>
+			<td>Gluten-free</td>
+			<td>Ennui</td>
+			<td>Keffiyeh</td>
+		</tr>
+		<tr>
+			<th scope="row">Thundercats</th>
+			<td>Jean</td>
+			<td>Shorts</td>
+			<td>Biodiesel</td>
+		</tr>
+		<tr>
+			<th scope="row">Terry</th>
+			<td>Richardson</td>
+			<td>Swag</td>
+			<td>Blog</td>
+		</tr>
+		</table>
+		<p>It’s good to have information organized.</p>
+	</section>
+
+	<section class="slide grid">
+		<h2>All nicely aligned to grid</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Видео с помощью <code>iframe</code></h2>
+		<iframe src="https://player.vimeo.com/video/107469289?title=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</section>
+	
+	<section class="slide">
+		<h2>Видео с помощью <code>video</code></h2>
+		<video width="640" controls>
+			<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+			<source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+  			Your browser does not support the video tag.
+		</video>
+	</section>
+
+	<section class="slide">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_E1xW_wfIDsTuebWMIjiTjau8zl9no0XirZY8qfwi9pFDlw/viewform?embedded=true" width="760" height="450" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+		<p style="text-align: center">Вставка формы Google</p>
+	</section>
+
+	<section class="slide">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.429957733714!2d30.31853331356217!3d59.93446662653819!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x58d9a00fd924dc8f!2z0J7RgtC00LXQuyDRgdGC0YPQtNC10L3RgtC-0LIg0KDQk9Cf0KMg0LjQvC4g0JAu0JguINCT0LXRgNGG0LXQvdCw!5e0!3m2!1sru!2sru!4v1521918500750" width="760" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<p style="text-align: center">Вставка карты Google</p>
+	</section>
+
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			<img src="pictures/logo.svg" alt="Shower logo">
+			<a href="https://github.com/shower/shower">See more on GitHub</a>
+		</h2>
+		<style>
+			#see-more h2 {
+				font-size:100px
+				}
+			#see-more img {
+				width:0.72em;
+				height:0.72em;
+				}
+		</style>
+	</section>
+
+	<footer class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</footer>
+
+	<div class="progress"></div>
+
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
