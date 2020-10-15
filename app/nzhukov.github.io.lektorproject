@@ -1,8 +1,0 @@
-[project]
-name = nzhukov.github.io
-url_style = absolute
-
-
-[servers.ghpages]
-name = GitHub Pages
-target = ghpages+https://nzhukov:6e9ab20c18f188c6e5bd5cb4ce1ed3428f0fa21b@nzhukov/nzhukov.github.io
