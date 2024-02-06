@@ -1,23 +1,11 @@
----
-title: "My First Post"
-date: 2019-07-19T11:50:19-03:00
-draft: false
----
++++
+title = 'Hello, World Post'
+date = 2024-02-06T16:20:19+03:00
+draft = true
++++
 
-# Header
-This is cool
+## Introduction
 
-## Subheader
+This is **bold** text, and this is *emphasized* text.
 
-Even better
-
-### SUBSUB
-
-1. test
-2. test
-
-**BIG BOLD**
-
-```
-code
-```
+Visit the [Hugo](https://gohugo.io) website!
